@@ -1,0 +1,24 @@
+@media screen and (max-width: 800px) {
+  #navigation {
+    display: block; /*Remove display:flex;*/
+
+    ul {
+      li {
+        display: block; /*Remove horizontally aligned list items*/
+        padding: 15px 0 15px 15px;
+      }
+      li:not(:last-child) {
+        border-bottom: 1px solid #cbcbcb;
+      }
+    }
+
+    #bars {
+      display: block;
+      float: right;
+      font-size: 15px;
+      color: white;
+      background-color: black;
+      margin: 10px 10px 0 0;
+    }
+  }
+}

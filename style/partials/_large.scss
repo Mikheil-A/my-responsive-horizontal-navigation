@@ -1,0 +1,21 @@
+@media screen and (min-width: 800px) {
+  #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      li {
+        display: inline-block; /*make list items horizontal*/
+        padding: 8px 15px;
+      }
+      li:not(:last-child) {
+        border-right: 1px solid #cbcbcb;
+      }
+    }
+
+    #bars {
+      display: none;
+    }
+  }
+}

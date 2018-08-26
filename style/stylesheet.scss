@@ -1,0 +1,40 @@
+@import "partials/_reset";
+@import "partials/_large";
+@import "partials/_small";
+
+#navigation {
+  background-color: #565656;
+
+  #logo {
+    font-size: 40px;
+    color: #74b2bb;
+    text-decoration: none;
+    padding: 8px 15px;
+  }
+
+  ul {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-right: 15px;
+
+    li {
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+        transition-duration: 0.2s;
+        transition-property: color;
+        transition-timing-function: ease-in-out;
+      }
+    }
+    li:hover {
+      a {
+        color: #6dc498;
+      }
+    }
+  }
+}

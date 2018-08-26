@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media screen and (min-width: 800px) {
+  #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #navigation ul li {
+      display: inline-block;
+      /*make list items horizontal*/
+      padding: 8px 15px; }
+    #navigation ul li:not(:last-child) {
+      border-right: 1px solid #cbcbcb; }
+    #navigation #bars {
+      display: none; } }
+@media screen and (max-width: 800px) {
+  #navigation {
+    display: block;
+    /*Remove display:flex;*/ }
+    #navigation ul li {
+      display: block;
+      /*Remove horizontally aligned list items*/
+      padding: 15px 0 15px 15px; }
+    #navigation ul li:not(:last-child) {
+      border-bottom: 1px solid #cbcbcb; }
+    #navigation #bars {
+      display: block;
+      float: right;
+      font-size: 15px;
+      color: white;
+      background-color: black;
+      margin: 10px 10px 0 0; } }
+#navigation {
+  background-color: #565656; }
+  #navigation #logo {
+    font-size: 40px;
+    color: #74b2bb;
+    text-decoration: none;
+    padding: 8px 15px; }
+  #navigation ul {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding-right: 15px; }
+    #navigation ul li {
+      cursor: pointer; }
+      #navigation ul li a {
+        text-decoration: none;
+        color: white;
+        transition-duration: 0.2s;
+        transition-property: color;
+        transition-timing-function: ease-in-out; }
+    #navigation ul li:hover a {
+      color: #6dc498; }
+
+/*# sourceMappingURL=stylesheet.css.map */
